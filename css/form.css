@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    opacity: 50%;
+    margin-left: 50px;
+    filter: drop-shadow(0 0 5px #333);
+}
+
+input[type=date] {
+    margin-left: 50px;
+}
+
+#e-date {
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 5px #333);
+}
+
+#b-date {
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 5px #333);
+}
+
+#to-arrow {
+    color: #fff;
+    font-weight: bolder;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #fff;
+    margin-left: 50px
+}
+
+#form-button {
+    margin-top: 30px;
+    margin-left: 50px;
+    padding: 12px;
+}
+
+.form-titles {
+    color: #fff;
+    filter: drop-shadow(0 0 5px #333);
+}
+
+#blue-button {
+    margin-top: 30px;
+    margin-left: 50px;
+    box-shadow: #000;
+    filter: drop-shadow(0 0 5px #333);
+    cursor: pointer;
+}
+
+#city-button {
+    margin-top: 30px;
+    margin-left: 50px;
+    box-shadow: #000;
+    filter: drop-shadow(0 0 5px #333);
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.formcontainer {
+    background-image: url(../img/sky-414198_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#output-title {
+    color: #fff;
+    filter: drop-shadow(0 0 30px #333);
+    margin-left: 50px;
+}
+
+#output-field {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: #fff;
+    filter: drop-shadow(0 0 30px #333);
+}
+
+#notify {
+    margin-left: 50px;
+    margin-top: 30px;
+    color: #fff;
+    filter: drop-shadow(0 0 30px #333);
+}
+
+hr {
+    border: 0;
+    border-top: 3px double #8c8c8c;
+}
+
+
+/* .output ul>li:nth-child(2n+2) {
+    background-color: #e6e4e2;
+} */
+
+#output-data ul>li:nth-child(2n+2) {
+    background-color: #e6e4e2;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, 
+make the two columns stack on top of each other instead of next 
+to each other. Also create the hamburger menu. */
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
